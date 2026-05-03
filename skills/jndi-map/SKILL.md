@@ -10,7 +10,7 @@ description: >-
 allowed-tools: Bash(java:*)
 ---
 
-# JNDIMap Skill
+# JNDIMap
 
 Use this skill to help with JNDIMap setup, documentation lookup, command construction, URL format selection, protocol configuration, module selection, and troubleshooting. JNDIMap supports LDAP, RMI, and LDAPS services, Basic payloads, BeanFactory bypasses, JDBC-related payloads, LDAP deserialization, Hessian, Tomcat XXE, custom scripts, and advanced runtime options.
 

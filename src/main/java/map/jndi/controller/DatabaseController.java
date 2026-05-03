@@ -390,7 +390,7 @@ public abstract class DatabaseController implements Controller {
     }
 
     @JNDIMapping("/Derby/Slave/{database}/{host}/{port}")
-    public Properties derbySlave(String host, String port, String database) {
+    public Properties derbySlave(String database, String host, String port) {
         System.out.println("[Derby] [Slave] Host: " + host + " Port: " + port + " Database: " + database);
 
         String url = "jdbc:derby:memory:" + database + ";startMaster=true;slaveHost=" + host + ";slavePort=" + port;

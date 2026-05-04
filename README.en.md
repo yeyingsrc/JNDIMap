@@ -65,6 +65,7 @@ codex '$jndi-map Start the JNDIMap server and tell me how to make a JDBC reverse
 - LDAP trustSerialData Bypass
 - JShell payload Bypass (Nashorn JS Engine Alternative)
 - UTF-8 Overlong Encoding Bypass
+- Lambda class name suffix obfuscation
 
 ## 📖 Documentation
 

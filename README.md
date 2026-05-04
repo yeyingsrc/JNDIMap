@@ -65,6 +65,7 @@ codex '$jndi-map 启动 JNDIMap 服务器并告诉我如何在 10.0.0.1:1337 上
 - LDAP trustSerialData 绕过
 - JShell Payload 绕过 (可替代 Nashorn JS Engine)
 - UTF-8 Overlong Encoding 绕过
+- Lambda 类名后缀混淆
 
 ## 📖 使用指南
 

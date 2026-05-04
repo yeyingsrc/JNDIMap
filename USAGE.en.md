@@ -756,7 +756,7 @@ java -jar JNDIMap.jar --overlong-encoding
 
 ### Lambda
 
-Appends `$Proxy0$$Lambda$1` to the generated malicious Java class to bypass some WAFs
+Appends `$Proxy0$$Lambda$1` suffix to the generated malicious Java class to bypass some WAFs
 
 ```java
 public static String appendLambdaSuffix(String className) {

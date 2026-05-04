@@ -107,6 +107,7 @@ codex '$jndi-map 启动 JNDIMap 服务器并告诉我如何在 10.0.0.1:1337 上
   - [Confusing Class Name](USAGE.md#confusing-class-name)
   - [JShell Payload](USAGE.md#jshell-payload)
   - [UTF-8 Overlong Encoding](USAGE.md#utf-8-overlong-encoding)
+  - [Lambda](USAGE.md#lambda)
 
 ## ⚙️ 编译
 
@@ -149,6 +150,8 @@ mvn package -Dmaven.test.skip=true
 [https://www.leavesongs.com/PENETRATION/utf-8-overlong-encoding.html](https://www.leavesongs.com/PENETRATION/utf-8-overlong-encoding.html)
 
 [https://github.com/Whoopsunix/utf-8-overlong-encoding](https://github.com/Whoopsunix/utf-8-overlong-encoding)
+
+[https://github.com/ReaJason/MemShellParty](https://github.com/ReaJason/MemShellParty)
 
 ## 🌟 Star History
 

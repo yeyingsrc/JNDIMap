@@ -4,6 +4,7 @@ import com.reajason.javaweb.memshell.MemShellGenerator;
 import com.reajason.javaweb.memshell.MemShellResult;
 import com.reajason.javaweb.memshell.ShellTool;
 import com.reajason.javaweb.memshell.config.*;
+import map.jndi.Main;
 
 public class MemShellPayload {
     public static MemShellResult generate(String server, String tool, String type) {
@@ -13,6 +14,7 @@ public class MemShellPayload {
                 .shellType(type)
                 .shrink(true)
                 .debug(false)
+                .lambdaSuffix(Main.config.lambda)
                 .build();
         InjectorConfig injectorConfig = InjectorConfig.builder().build();
         ShellToolConfig shellToolConfig = getShellToolConfig(shellConfig.getShellTool());

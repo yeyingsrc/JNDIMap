@@ -753,3 +753,22 @@ Just specify the `--overlong-encoding` parameter when using it
 ```bash
 java -jar JNDIMap.jar --overlong-encoding
 ```
+
+### Lambda
+
+Appends `$Proxy0$$Lambda$1` to the generated malicious Java class to bypass some WAFs
+
+```java
+public static String appendLambdaSuffix(String className) {
+    if (className.contains("$Lambda$")) {
+        return className;
+    }
+    return className + "$Proxy0$$Lambda$1";
+}
+```
+
+Just specify the `--lambda` parameter when using it
+
+```bash
+java -jar JNDIMap.jar --lambda
+```

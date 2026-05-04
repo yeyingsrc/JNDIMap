@@ -54,11 +54,26 @@ public class MiscUtil {
     }
 
     public static String getClassName() {
+        String className;
+
         if (Main.config.confusingClassName) {
-            return getRandClassName();
+            className = getRandClassName();
         } else {
-            return getRandStr(8);
+            className = getRandStr(8);
         }
+
+        if (Main.config.lambda) {
+            className = appendLambdaSuffix(className);
+        }
+
+        return className;
+    }
+
+    public static String appendLambdaSuffix(String className) {
+        if (className.contains("$Lambda$")) {
+            return className;
+        }
+        return className + "$Proxy0$$Lambda$1";
     }
 
     public static String getRandStr(int length) {
@@ -103,7 +118,7 @@ public class MiscUtil {
             return selectedClassName;
         }
 
-        return null;
+        throw new RuntimeException("No more class names available");
     }
 
     public static String tryBase64UrlDecode(String encText) {

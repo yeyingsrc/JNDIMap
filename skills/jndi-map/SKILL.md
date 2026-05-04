@@ -5,8 +5,8 @@ description: >-
   LDAPS. It helps run the jar, choose flags and ports, build JNDI URLs for Basic
   payloads, MemShell injection, BeanFactory bypasses, JDBC RCE, Tomcat XXE,
   Hessian, LDAP deserialization gadgets, custom scripts, and advanced options
-  such as JShell, reference-only mode, confusing class names, and overlong
-  encoding.
+  such as JShell, reference-only mode, confusing class names, overlong
+  encoding and lambda suffixes.
 allowed-tools: Bash(java:*)
 ---
 
@@ -37,8 +37,6 @@ asset_url="$(curl -s https://api.github.com/repos/X1r0z/JNDIMap/releases/latest 
 test -n "$asset_url"
 curl -L "$asset_url" -o "scripts/$(basename "$asset_url")"
 ```
-
-If network access is blocked by the environment, request permission to run the download with network access.
 
 After downloading, use the discovered jar path in later commands:
 

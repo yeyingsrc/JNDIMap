@@ -51,5 +51,8 @@ public class Config {
     @Option(names = {"--overlong-encoding"}, description = "use UTF-8 Overlong Encoding to bypass WAF")
     public boolean overlongEncoding = false;
 
+    @Option(names = {"--lambda"}, description = "append lambda suffix to the class name to bypass WAF")
+    public boolean lambda = false;
+
     public String codebase;
 }

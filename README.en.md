@@ -107,6 +107,7 @@ codex '$jndi-map Start the JNDIMap server and tell me how to make a JDBC reverse
   - [Confusing Class Name](USAGE.md#confusing-class-name)
   - [JShell Payload](USAGE.en.md#jshell-payload)
   - [UTF-8 Overlong Encoding](USAGE.en.md#utf-8-overlong-encoding)
+  - [Lambda](USAGE.en.md#lambda)
 
 ## ⚙️ Compile
 
@@ -149,6 +150,8 @@ mvn package -Dmaven.test.skip=true
 [https://www.leavesongs.com/PENETRATION/utf-8-overlong-encoding.html](https://www.leavesongs.com/PENETRATION/utf-8-overlong-encoding.html)
 
 [https://github.com/Whoopsunix/utf-8-overlong-encoding](https://github.com/Whoopsunix/utf-8-overlong-encoding)
+
+[https://github.com/ReaJason/MemShellParty](https://github.com/ReaJason/MemShellParty)
 
 ## 🌟 Star History
 

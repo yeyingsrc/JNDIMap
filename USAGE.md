@@ -754,3 +754,23 @@ java -jar JNDIMap.jar --jshell
 ```bash
 java -jar JNDIMap.jar --overlong-encoding
 ```
+
+## Lambda
+
+为生成的恶意 Java 类追加 `$Proxy0$$Lambda$1` 以绕过部分 WAF
+
+```java
+public static String appendLambdaSuffix(String className) {
+    if (className.contains("$Lambda$")) {
+        return className;
+    }
+    return className + "$Proxy0$$Lambda$1";
+}
+```
+
+使用时指定 `--lambda` 参数即可
+
+```bash
+java -jar JNDIMap.jar --lambda
+```
+
